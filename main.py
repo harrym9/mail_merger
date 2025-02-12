@@ -5,7 +5,7 @@ with open("Input/Names/invited_names.txt", "r") as file:
     lines = file.readlines()
     names = []
     for line in lines:
-        names.append(line.strip("\n"))
+        names.append(line.strip())
 
 for name in names:
     with open(f"Output/ReadyToSend/invite_for_{name}", "w") as file:
